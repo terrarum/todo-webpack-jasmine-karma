@@ -1,0 +1,12 @@
+.todo {
+    display: flex;
+    padding: 5px;
+}
+
+.todo-title {
+    flex-grow: 1;
+}
+
+.checkbox {
+    margin-right: 10px;
+}

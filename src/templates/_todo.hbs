@@ -1,0 +1,5 @@
+<div class="todo js-todo">
+    <input class="checkbox js-checkbox" type="checkbox" data-index="{{@index}}" {{#if done}}checked{{/if}}>
+    <div class="todo-title">{{ title }}</div>
+    <button class="delete js-delete" data-index="{{@index}}">Delete</button>
+</div>
