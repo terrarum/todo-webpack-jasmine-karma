@@ -17,13 +17,8 @@ contentElement.innerHTML = pageTemplate();
 // Get child element references.
 const listElement = document.querySelector('.js-list');
 
-// Array of todo items.
-let todoList = [];
-
-window.todoList = todoList;
-
 // Todo's class.
-const todos = new Todos(todoList);
+const todos = new Todos();
 
 // Add listeners for delete buttons.
 contentElement.addEventListener("click", function(event) {
@@ -43,7 +38,7 @@ contentElement.addEventListener("change", function(event) {
 
 // Render the todo list when the todos list has changed.
 document.addEventListener("TODOLIST:MODIFIED", function(event) {
-    listElement.innerHTML = todosTemplate({todoList: todoList});
+    listElement.innerHTML = todosTemplate({todoList: todos.getAllTodos()});
 });
 
 // Add new tasks.

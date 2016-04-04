@@ -1,8 +1,8 @@
 import TodoModel from '../models/todoModel';
 
 class Todos {
-    constructor(todoList) {
-        this.todoList = todoList;
+    constructor() {
+        this.todoList = [];
     }
     
     add(title, done) {
@@ -25,6 +25,10 @@ class Todos {
         this.todoList[index].done = !this.todoList[index].done;
 
         document.dispatchEvent(new Event('TODOLIST:MODIFIED'));
+    }
+
+    getAllTodos() {
+        return this.todoList;
     }
 }
 
