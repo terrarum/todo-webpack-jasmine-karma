@@ -1,6 +1,14 @@
+body {
+    font-family: Helvetica;
+}
+
 .todo {
     display: flex;
     padding: 5px;
+}
+
+.todo.is-done {
+    text-decoration: line-through;
 }
 
 .todo-title {
