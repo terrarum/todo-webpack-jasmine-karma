@@ -7,7 +7,7 @@ body {
     padding: 5px;
 }
 
-.todo.is-done {
+.todo.is-done > .todo-title {
     text-decoration: line-through;
 }
 
@@ -17,4 +17,10 @@ body {
 
 .checkbox {
     margin-right: 10px;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #999999;
+    margin: 10px 0;
 }
