@@ -1,4 +1,3 @@
-var path = require('path');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var autoprefixer = require('autoprefixer');
 var cssnano = require('cssnano');
@@ -20,7 +19,7 @@ module.exports = {
     devtool: 'source-map',
     entry: './src/main.js',
     output: {
-        path: path.join(__dirname, 'build'),
+        path: './build',
         filename: 'bundle.js'
     },
     plugins: [

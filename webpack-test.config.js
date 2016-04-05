@@ -1,12 +1,10 @@
-var path = require('path');
-
 var JasmineWebpackPlugin = require('jasmine-webpack-plugin');
 
 module.exports = {
     devtool: 'source-map',
     entry: './spec/main.js',
     output: {
-        path: path.join(__dirname, 'build/specs'),
+        path: './build/specs',
         filename: 'bundle.js'
     },
     plugins: [
@@ -20,10 +18,6 @@ module.exports = {
                 query: {
                     presets: ['es2015']
                 }
-            },
-            {   // Handlebars.
-                test: /\.hbs/,
-                loader: "handlebars-loader"
             }
         ]
     }
