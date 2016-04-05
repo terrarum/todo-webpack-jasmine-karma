@@ -8,4 +8,4 @@
 
 # Karma
 
-karma start karma.conf.js
+`karma start karma.conf.js`

@@ -4,15 +4,15 @@ module.exports = function(config) {
         // Karma config.
         frameworks: ['jasmine'],
         browsers: ['PhantomJS'],
-        reporters: ['progress', 'dots'],
+        reporters: ['dots'],
 
         // Webpack.
         files: [
-            './spec/main.js'
+            './src/tests/*.js'
         ],
 
         preprocessors: {
-            './spec/main.js': ['webpack']
+            './src/tests/*.js': ['webpack']
         },
 
         webpack: {
