@@ -7,6 +7,8 @@ The following packages need to be installed globally to run them from the comman
 
 This requirement could be alleviated by running them through a task runner such as Gulp. This would probably be a good idea as it allows additional tasks to be run that Webpack is not well suited for, such as deleting the build folder before every build.
 
+Once those are installed, `npm install` will handle everything else.
+
 # Commands.
 -   Build app:
 
