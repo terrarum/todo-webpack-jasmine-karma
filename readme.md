@@ -37,6 +37,8 @@ Once those are installed, `npm install` will install the remaining dev dependenc
     Plugins can have a `tests` folder inside them that contains all tests. This makes tests easy to target when running the entire test suite, as described in the test aggregation question below.
  
     If the plugin has any dependencies, these dependencies should be mocked, as tests for **Plugin A** should not fail if there is a problem with **Plugin B**. However, if Plugin A's output is updated and Plugin B and its mocks are not updated, all tests will pass while the plugin interaction is actually broken. There should be a level where tests are performed against the actual plugins and not their mocks (thanks @GrahamMartin).
+    
+    It's possible that we should only use mocks for things like API responses and use our plugins wherever we can.
 
 3. ### How do we run the tests?
 
