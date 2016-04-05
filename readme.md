@@ -58,4 +58,6 @@ Once those are installed, `npm install` will install the remaining dev dependenc
 
 6. ### Documenting prerequisites for an automated environment to run these tests? node etc.
 
+    Install karma-cli and webpack. Install project deps.
     
+    Karma must have a way of reporting test pass/failure to other services.
