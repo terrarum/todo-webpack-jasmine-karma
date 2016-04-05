@@ -1,3 +1,6 @@
+// Karma configuration: http://karma-runner.github.io/0.13/config/configuration-file.html
+// karma-webpack configuration: https://github.com/webpack/karma-webpack
+
 module.exports = function(config) {
     config.set({
 
@@ -6,15 +9,17 @@ module.exports = function(config) {
         browsers: ['PhantomJS'],
         reporters: ['dots'],
 
-        // Webpack.
+        // Files containing tests.
         files: [
-            './src/tests/*.js'
+            './src/**/tests/*.js'
         ],
 
+        // Preprocessors to run against test files.
         preprocessors: {
-            './src/tests/*.js': ['webpack']
+            './src/**/tests/*.js': ['webpack']
         },
 
+        // Webpack setup. Specifies loaders required for tests to compile.
         webpack: {
             module: {
                 loaders: [
@@ -29,6 +34,7 @@ module.exports = function(config) {
             }
         },
 
+        // Disables verbose output in CLI.
         webpackMiddleware: {
             noInfo: true
         }
