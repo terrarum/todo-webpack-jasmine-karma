@@ -9,14 +9,19 @@ This requirement could be alleviated by running them through a task runner such 
 
 # Commands.
 -   Build app:
+
     `webpack`
 
 -   Build Jasmine test runner:
+
     `webpack --config webpack-test.config.js`
+    
     This results in an html file that can be used to run Jasmine in the browser, entirely separately from Karma.
 
 -   Run Karma:
+
     `karma start karma.conf.js`
+    
     Karma watches for file changes by default, so this does not need to be run every time you change something.
 
 # Questions
