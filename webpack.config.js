@@ -1,6 +1,7 @@
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var autoprefixer = require('autoprefixer');
 var cssnano = require('cssnano');
+var path = require('path');
 
 var htmlMinifyOptions = {
     collapseWhitespace: true,
@@ -19,7 +20,7 @@ module.exports = {
     devtool: 'source-map',
     entry: './src/main.js',
     output: {
-        path: './build',
+        path: path.resolve('./build'), // https://github.com/webpack/webpack-dev-server/issues/88
         filename: 'bundle.js'
     },
     plugins: [

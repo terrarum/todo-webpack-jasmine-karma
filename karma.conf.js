@@ -7,7 +7,6 @@ module.exports = function(config) {
         // Karma config.
         frameworks: ['jasmine'],
         browsers: ['PhantomJS'],
-        reporters: ['dots'],
 
         // Files containing tests.
         files: [

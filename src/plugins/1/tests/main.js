@@ -29,7 +29,7 @@ describe('Todo Module', function() {
         todos.add('Invade Canada.');
 
         let items = todos.getAllTodos();
-        expect(items.length).toEqual(3);
+        expect(items.length).toEqual(2);
 
         todos.delete(1);
         items = todos.getAllTodos();
